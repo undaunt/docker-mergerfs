@@ -1,5 +1,6 @@
-FROM debian:jessie
+FROM ubuntu:bionic
 MAINTAINER IronicBadger <ironicbadger@linuxserver.io>
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Builds MergerFS from source
 RUN apt-get update && \
@@ -10,6 +11,7 @@ RUN apt-get update && \
     git \
     git-buildpackage \
     pandoc \
+    python \
     debhelper \
     libfuse-dev \
     libattr1-dev
