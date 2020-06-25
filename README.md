@@ -1,5 +1,5 @@
 # docker-mergerfs
-Build mergerfs from source using docker for debian jessie (8).
+Build mergerfs from source using docker for ubuntu bionic (18.04).
 
 To build, clone the repo and `chmod +x build.sh` then,
 
